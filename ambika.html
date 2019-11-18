@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ambica mobile world</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="girish.css">
+<link rel="stylesheet" href="girish1.css">
+<link rel="stylesheet" href="girish2.css">
+<link rel="stylesheet" href="girish3.css">
+<link rel="stylesheet" href="girish5.css">
+<style>
+    .img
+       {
+         position: absolute;
+         top: 70px;
+         right: -240px;
+       }
+   .img1
+      {
+        position: absolute;
+        top: 21px;
+        right: -330px;
+      }
+   .img3
+     {
+        position: absolute;
+        top: 375px;
+        right:-20px;
+     }
+   .img4 
+     {
+       position: absolute;
+       top: 0px;
+       right: -20px;
+     }
+   .img5 
+     {
+        position: absolute;
+        top: 0px;
+        right:-23px;
+     }
+   .img6
+     {
+        position: absolute;
+        top: 375px;
+        right: 224px;
+     }
+   .img7
+     { 
+        position: absolute;
+        bottom:0px;
+        left: 255px;
+     }
+   .img8
+     {
+        position: absolute;
+        bottom:-375px;
+        left: 10px;
+     }
+   .sub
+     {
+       width: 102%;
+     }
+   .footer
+     {
+       width: 102%;
+     }
+   .mySlides 
+     {
+       display:none;
+       height: 450px;
+       width: 940px;
+     }
+   .text 
+     {
+       font-size: 70px;
+       position: absolute;
+       top:-25px;
+       top: 70px;
+       left: 400px;
+     }
+   .text
+     {
+        background-color: #666;
+        color: white;
+        padding: px;
+        text-align: center;
+        top: 10px;
+        left: 410px;
+        text-shadow: 3px 3px red;
+        border-radius: 30px;
+     }
+   .girish
+      {
+         background-color: #666;
+         color: white;
+         right: 80px;
+         font-size: 35px;
+         position: absolute;
+         text-align: center;
+         text-shadow: 3px 3px red;
+         border-radius: 15px;
+      }
+.overlay 
+{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content 
+{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a 
+{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus 
+{
+  color: #f1f1f1;
+}
+
+.overlay .closebtn 
+{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) 
+{
+  .overlay a {font-size: 20px}
+  .overlay .closebtn 
+  {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.w3-sidebar a 
+  {
+      font-family: "Roboto", sans-serif
+  }
+body,h1,h2,h3,h4,h5,h6,.w3-wide 
+  {
+      font-family: "Montserrat", sans-serif;
+  }
+</style>
+</head>
+  <body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+    <div id="myNav" class="overlay">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+               <div class="w3-container w3-display-container w3-padding-16">
+                    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+                    <h3 class="w3-wide girish"><b>Ambica</b></h3>
+               </div>
+  
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="#" class="w3-bar-item w3-button">SAMAUNG</a>
+        <a href="#" class="w3-bar-item w3-button">OPPO</a>
+           <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+             MI <i class="fa fa-caret-down"></i>
+          </a>
+         <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                 <a href="#" class="w3-bar-item w3-button">Mi A1</a>
+                 <a href="#" class="w3-bar-item w3-button">Redmi note4</a>
+                 <a href="#" class="w3-bar-item w3-button">mi max2</a>
+                 <a href="#" class="w3-bar-item w3-button">mi </a>
+         </div>
+         <a href="#" class="w3-bar-item w3-button">ViVO</a>
+         <a href="#" class="w3-bar-item w3-button">NOKIA</a>
+         <a href="#" class="w3-bar-item w3-button">LAVA</a>
+         <a href="#" class="w3-bar-item w3-button">LENOVO</a>
+  </div>
+           <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+           <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+  </nav>
+  </div>
+  
+
+<!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+       <div class="w3-bar-item w3-padding-24 w3-wide">Ambica</div>
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+     <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+      <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+     <header class="w3-container w3-xlarge">
+         <p class="w3-left"><div class="text">Ambica mobile world</div></p>
+             <p class="w3-right">
+                 <i class="fa fa-shopping-cart w3-margin-right"><div class="img"><a href="#"><img src="img/small-cart-md.png" height="15%" width="15%"></a></div></i>
+             </p>
+     </header>
+
+  <!-- Image header -->
+     <div class="w3-display-container w3-container">
+         <div class="slideshow-container">
+             <div class="w3-content w3-section">    
+                 <a href="#">  <img class="mySlides"  src="img/download (5).jpg" alt="Ambica"></a>
+                 <a href="#">  <img class="mySlides"  src="img/images (7).jpg" alt="Ambica"></a>
+                 <a href="#"> <img class="mySlides"  src="img/images (8).jpg" alt="Ambica"></a>
+             </div>
+      
+     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+         <h1 class="w3-jumbo w3-hide-small"></h1>
+         <h1 class="w3-hide-large w3-hide-medium"></h1>
+         <h1 class="w3-hide-small"></h1>
+         
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p></p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+          <div class="w3-display-container">
+              <a href="#"><img src="img/1524457733094 - Copy - Copy.jpg" height="300px" width="200px"></a>
+                 <div class="w3-display-middle w3-display-hover">
+                     <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                 </div>
+             <p>Samsung Galaxy A50<br><b>RS.19990</b></p>
+          </div>
+      </div>
+    
+ <div class="w3-container"> 
+         <a href="#"> <img src="img/DSC_4510 - Copy - Copy.JPG" height="300px" width="200px"></a>
+             <p>oppo<br><b>11000/-</b></p>
+ </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+           <div class="img8"> 
+               <a href="#"><img src="img/DSC_4512 - Copy - Copy.JPG" height="300px" width="200px"></a>
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+              <p>redmi note4<br><b>10000/-</b></p>
+           </div>
+        </div>
+      </div>
+        
+      <div class="w3-container">
+          <div class="img7">
+              <a href="#"><img src="img/1524318197695 - Copy - Copy.jpg" height="300px" width="200px"></a>
+                 <div class="w3-display-middle w3-display-hover">
+                     <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                 </div>
+             <p>oppo A37f<br><b>11000/-</b></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+           <div class="img6"> 
+               <a href="#"><img src="img/1524457733195 - Copy - Copy.jpg" height="300px" width="200px"></a>
+                 <div class="w3-display-middle w3-display-hover">
+                     <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                 </div>
+                  <p>poco f1<br><b>21000/-</b></p>
+          </div>
+      </div>
+      
+        <div class="w3-container">
+            <div class="w3-display-container">
+                <div class="img5">
+                   <a href="#"><img src="img/1524457733356 - Copy - Copy.jpg" height="300px" width="200px"></a>
+                   <span class="w3-tag w3-display-topleft">Sale</span>
+                    <div class="w3-display-middle w3-display-hover">
+                      <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                   <p>samsung m10<br><b class="w3-text-red">9000/-</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="img4"> 
+                 <a href="#"><img src="img/1523189613151 - Copy - Copy.jpg" height="300px" width="200px"></a>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        <p>samsung m20<br><b>15000/-</b></p>
+            </div>
+        </div>
+        <div class="w3-container">
+            <div class="img3">
+                <a href="#"><img src="img/1524318197695 - Copy - Copy.jpg" height="300px" width="200px"></a>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                        <p>mi max2<br><b>16000/-</b></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Subscribe section -->
+  <div class="sub">
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer">
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">@copyright Ambicamobileworld.com <a href="http://localhost:8080/WebApplication1/newjsp2.jsp"class="w3-hover-opacity">Ambica.com</a></div>
+
+  <!-- End page content -->
+</div>
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() 
+    {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) 
+        {
+        x.className += " w3-show";
+        }
+ else 
+        {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() 
+    {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block"; 
+    }
+ 
+function w3_close() 
+    {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+var myIndex = 0;
+carousel();
+
+function carousel() 
+    {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) 
+        {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+
+//side bar menu with open button
+
+function openNav() 
+    {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+function closeNav() 
+    {
+        document.getElementById("myNav").style.width = "0%"; 
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jqery</title>
+	<style type="text/css">
+		td{
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+
+<p>nai girish </p>
+<button>new cliack</button>
+<script type="text/javascript">
+	$('button').click(function()
+	{
+		alert("hello");
+		$('p').hide(1000);
+	});
+	function x()
+	{
+		alert("hello bro");
+		$('p').hide(1000);
+	}
+	$('button').click(x);
+
+
+	$(document).ready(function()
+	{
+		$('button').click(function()
+		{
+			alert("hello how are you");
+			$('#s').append('<p>my </p><h1>name</h1>');
+		});
+	});
+
+
+</script>
+<script type="text/javascript">
+	f=0;
+	$('td').click(function()
+	{
+		if(f==0)
+		{
+			$(this).text("0");
+			f=1;
+		}
+		else
+		{
+			$(this).text('x');
+			f=1;
+		}
+	});
+</script>
+<table border="1px">
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+</body>
+</html>

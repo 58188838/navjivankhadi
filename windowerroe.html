@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	   window.onerror = handleError;
+         function doThis() {
+            alrrt( "hi" ); // alert misspelled, creates an error
+         }
+function handleError( errType, errURL, errLineNum ) 
+         {
+          window.status = "Error: " + errType + " on line " + errLineNum;
+          return true;
+         }
+
+</script>
+<body>
+
+<input id = "mybutton" type = "button" value = "Click Me!"
+         onclick = "doThis()" />
+</body>
+</html>

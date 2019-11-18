@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+<style>
+	fieldset { 
+  display: block;
+  margin-left: 400px;
+  margin-right: 550px;
+  border: 5px groove;
+}
+
+</style>
+</head>
+<body>
+	
+ <form action="/action_page.php"> 
+ 	<fieldset>
+ 	<legend>Student information </legend>
+ 	<label>Roll_Number: </label>
+ 	<input type="text" name="Roll_Number">
+ 	<br>
+ 	<br>
+   <label>Name:</label>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name here">
+   <br><br>
+      <label>Parent Name:</label>
+   &nbsp;<input type="text" name="">
+   <br><br>
+ 	 Image here:&nbsp;<input type="file" accept=".png, .jpeg">
+ 	<br><br>
+
+ 	Gender:<input type="radio" name="gender" value="male" checked="">Male
+           <input type="radio" name="gender" value="female">Female
+ 	<br><br>
+
+ 	 Select your semester:&nbsp;<select>
+ 		<option selected="">sem-1</option>
+ 		<option>sem-2</option>
+ 		<option>sem-3</option>
+ 		<option>sem-4</option>
+ 		<option>sem-5</option>
+ 		<option>sem-6</option>
+ 	</select><br><br>
+
+
+ 	Address:<br> &nbsp;<textarea cols="30" rows="10" wrap="text" name="address">
+ 		
+ 	</textarea><br>
+ 	Age:&nbsp;20<input type="range" min="20" max="65" name="rate" oninput="thisRate.value=rate.value">65
+ 	= <output name="thisRate" for="rate">0</output>
+     <br><br>
+      <input type="submit" name="submit">
+       
+
+
+ 	</fieldset>
+
+ <!--	<input type="range" min="0" max="20" id="rate" name="rate" value="0" oninput="thisRate.value = rate.value">
+<output name="thisRate" for="rate">0</output><span>%</span></p>
+<p>Interest Received: <strong>$<output name="amount" for="principal rate">0</output></strong></p>
+-->
+ </form
+</body>
+</html>

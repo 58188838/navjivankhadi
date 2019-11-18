@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>arithmetic operations</title>
+	<script type="text/javascript">
+		function operation(a,b)
+		{
+			add=a+b;
+			subtract=a-b;
+			multiply=a*b;
+			divide=a/b;
+			document.write("<br>",add,"<br>",subtract,"<br>",multiply,"<br>",divide,"<hr>");
+		}
+		function oddeven(n)
+		{
+			if(n%2==0)
+			{
+				document.write("<hr>","<br>","number is even");
+			}
+			else
+			{
+				document.write("<br>","number is odd");
+			}
+		}
+		function factorial(f)
+		{
+			 	fact = 1;
+			 	for(i=parseInt(f);i>0;i--)
+			 	{
+			 		fact=fact*i;
+			 	}
+			 	document.write("<br/>"+fact);
+		}
+		oddeven(5);
+		oddeven(8);
+		operation(20,10);
+		factorial(5);
+	</script>
+</head>
+<body>
+<div>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+       font-family: ;
+       padding: 00px;
+       background-image: url('E:\\nirma\\3mca103 wt\\PHOTOS\\56.jpg');     
+     }
+
+/* Header/Blog Title */
+.header {
+  padding: 1px;
+  text-align: center;
+  
+
+}
+
+.header h1 {
+  font-size: 80px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue,0 0 5px darkblue;
+}
+.header h1:hover{
+  animation-delay: 1s;
+  color: black;
+  font: serif;
+}
+
+/* Style the top navigation bar */
+.girish {
+  overflow: hidden;
+
+
+}
+
+/* Style the topnav links */
+.girish a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  margin-left:100px; 
+  text-decoration: none;
+  
+}
+
+/* Change color on hover */
+.girish a:hover {
+  
+  color: black;
+  transform: scale(2,2);
+  /*text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;*/
+  box-shadow: 0 20px 50px rgba(0,0,0,5);
+
+}
+
+#h2{
+  text-shadow: 1px 1px red;
+}
+h2::first-letter{
+  font-size: 50px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.aaaa {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 0px;
+  font-size: 25px;
+  text-align: center;
+  background: gray;
+  margin-top: -25px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .girish a {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px){
+  .header   h1{
+     font-size: 35px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .card img{
+          width:400px;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.mm
+{
+  mar
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Navjivan Khadi Bhavan</h1>
+</div>
+
+<div class="girish">
+  <a href="#">HOME</a>
+  <a href="file:///E:/nirma/3mca103%20wt/matkakhadi.html">PRODUCTS</a>
+  <a href="file:///E:/nirma/3mca103%20wt/video.html">VIDEO</a>
+  <a href="file:///E:/nirma/3mca103%20wt/shoping/matka.html">SHOPPING</a>
+  
+  <a href="file:///E:/nirma/3mca103%20wt/map.html">MAPS</a>
+  <a href="file:///E:/nirma/3mca103%20wt/contact.html">CONTACT</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 id="h2">Mahendrabhai Nai</h2>
+      <h5>Date of birth:21/01/1970</h5>
+     <img src="E:\nirma\3mca103 wt\IMG_20180502_192605.jpg" height="200px" width="300px">
+      <p>Some information..</p>
+      <p>The Corporation Commission does not determine the ownership of
+khadi. This should be a matter of record in the courthouse of the county where
+the land is located. </p>
+    </div>
+    <div class="card">
+      <h2>Milan_Nai</h2>
+      <h5>date of birth 30/12/1996</h5>
+      <img src="E:\nirma\3mca103 wt\IMG_20180502_192605.jpg" height="200px" width="300px">
+      <p>Some information...</p>
+      <p>Organizational information derives its meaning from the sense-making frameworks that characterize specific organizations. Many organizational members need information in order to fulfill their responsibilities, so other members gather data and convert it into information.Organizations can acquire data by scanning environmental data sources, by ingesting new members</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+            
+      <img src="E:\nirma\3mca103 wt\PHOTOS\g.jpg" height="250px" width="950px">
+    
+    
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="aaaa">
+        <div class="slideshow-container">
+           <div class="mySlides fade">
+      <a href="file:///E:/nirma/3mca103%20wt/shoping/matka.html"><img src="E:\nirma\3mca103 wt\PHOTOS\nav2.PNG" height="605px" width="950px"></a>
+    </div>
+     <div class="mySlides fade">
+      <img src="E:\nirma\3mca103 wt\PHOTOS\nav.PNG" height="605px" width="950px">
+    </div>
+     <div class="mySlides fade">
+      <a href="file:///E:/nirma/3mca103%20wt/shoping/matka.html"><img src="E:\nirma\3mca103 wt\PHOTOS\Screenshot (21).png" height="605px" width="950px"></a>
+    </div>
+
+  </div>
+     </div> 
+    </div>
+    <div class="aaaa">
+      <h3>Follow Me</h3>
+
+      <img src="E:\nirma\3mca103 wt\PHOTOS\l1.PNG" height="35px" width="50px">
+      <img src="E:\nirma\3mca103 wt\PHOTOS\l2.PNG" height="35px" width="50px">
+      <img src="E:\nirma\3mca103 wt\PHOTOS\l3.PNG" height="35px" width="50px">
+    </div>
+    
+  </div>
+</div>
+<div class="footer">
+  <h4> &reg;&copy;</h4>
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  
+</div>
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+</body>
+</html>
